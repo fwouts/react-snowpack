@@ -1,10 +1,11 @@
 import React from "react";
+import { Counter, CounterProps } from "./counter";
 
-export const App = (props: { count: number }) => {
+export const App = (props: CounterProps) => {
   return (
     <>
       <h1>Hello, World!</h1>
-      <p>The count is now {props.count}</p>
+      <Counter {...props} />
     </>
   );
 };
