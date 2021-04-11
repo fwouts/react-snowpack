@@ -1,11 +1,15 @@
 import React from "react";
-import { Counter, CounterProps } from "./counter";
+import { LoggedIn } from "../stories/Page.stories";
+import { CounterProps } from "./counter";
 
-export const App = (props: CounterProps) => {
+export const App = (_props: CounterProps) => {
   return (
     <>
-      <h1>Hello, World!</h1>
-      <Counter {...props} />
+      <LoggedIn
+        onLogin={() => {}}
+        onLogout={() => {}}
+        onCreateAccount={() => {}}
+      />
     </>
   );
 };
