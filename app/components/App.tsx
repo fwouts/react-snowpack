@@ -1,11 +1,11 @@
 import React from "react";
-import { Counter, CounterProps } from "./counter";
+import Select from "react-select";
 
-export const App = (props: CounterProps) => {
+export const App = () => {
   return (
     <>
       <h1>Hello, World!</h1>
-      <Counter {...props} />
+      <Select />
     </>
   );
 };
